@@ -33,36 +33,48 @@
 하지만 합병정렬 방식으로 nums1을 복사할 배열 공간을 마련하여 복사된 배열과 nums2를 비교하며 하나씩 집어넣으면 O(m + n)의 시간이 걸린다. 멍청해지지 말자.  
 +) 코드 분석 결과 nums1의 빈 뒷공간을 이용하여 큰 수부터 정렬하면 tmpArr를 사용하지 않고 문제를 해결할 수 있으므로 공간 복잡도도 O(m)에서 O(1)로 줄일 수 있다고 한다.
 
-### 5. Majority Element (27:16) (o)
+### 5. Majority Element (27:16) (O)
 (https://leetcode.com/problems/majority-element/)
 
 가장 먼저 떠오른 풀이는 정렬 후 앞에서부터 같은 수의 개 수를 세었을 때 다른 수로 바뀐 후까지의 해당 수의 개수가 과반이 되지 않는다면 바뀐 수부터 다시 카운트하고, 만약 남은 수가 절반이라면 해당 수를 바로 반환하도록 작성하였다.  
 레전드 멍청한 풀이다. 일단 정렬을 했으면 과반인 값은 중앙에 반드시 존재하게 되므로 능지 이슈 발생.  
 +) 코드 분석 결과 Follow-up 기준까지 만족하려면 보이어-무어 알고리즘을 활용하여 후보자 값에서 다른 값을 만날 때마다 같이 제외시키면 결국 과반인 수는 반드시 남게되므로 O(n)과 O(1)을 손쉽게 만족할 수 있더라.
 
-### 6. Contains-Duplicate (5:22) (o)
+### 6. Contains-Duplicate (5:22) (O)
 (https://leetcode.com/problems/contains-duplicate/)
 
 정렬 후 앞에서부터 하나씩 읽음. 같은 것 나오면 true 반환, 모두 다 다르면 false 반환.  
 시간 복잡도 점수가 낮아서 바로 떠오른 생각은 정렬 중간에 같은 값이면 바로 true 반환하는 방식도 고려해볼만 하지 않나 싶음.  
 +) 코드 분석 결과 시간 복잡도를 낮추기 위해선 HashSet을 사용하는 방법이 있지만 공간 복잡도 면에서 단점이 있음.
  
-### 7. Valid-Anagram (7:32) (o)
+### 7. Valid-Anagram (7:32) (O)
 (https://leetcode.com/problems/valid-anagram/)
 
 각 문자열을 char 배열로 변형 후 정렬한 뒤 앞에서부터 비교. 시간 복잡도는 낫배드, 공간 복잡도는 char 배열 생성으로 인해 낮아진듯?  
 +) 알파벳이 26개 밖에 없으므로 두 문자열의 길이가 같을 때 한 문자열에서 각 알파벳 수를 세고 나머지 문자열에서 각 알파벳 수를 빼는 방식으로 하면 O(n)에 O(1)이 가능함.  
 Follow-Up에 유니코드까지 고려한다면 더 복잡해질 것으로 보임.
 
-### 8. Set-Mismatch (10:00) (o/?)
+### 8. Set-Mismatch (10:00) (O/?)
 (https://leetcode.com/problems/set-mismatch/)
 
 해쉬 방식 (정렬을 하면 O(nlogn)이 되므로 해당 방식 고려(O(n)))  
 tempArr 하나 만들어서 각 숫자에 해당하는 칸을 +1로 개수 구하기 2번 나온건 2 안나온건 0이므로 차례대로 출력. 
 시간 복잡도를 해치지 않으면서 메모리를 아낄 수 있었을까?
 
-### 9. Top-K-Frequent-Elements (x)
+### 9. Top-K-Frequent-Elements (X)
 (https://leetcode.com/problems/top-k-frequent-elements/)
 
 머릿속으로는 어떻게 해야할지 생각이 드는데 코드로 옮길 수 없었다.
 숫자를 키 값으로 나올 때마다 그 수의 카운트를 올리고 그 윗 등수와 개수 비교를 해서 더 많아졌다면 등수 교환?
+
+### 10. Intersection-Of-Two-Arrays (27:32) (O/?) 
+(https://leetcode.com/problems/intersection-of-two-arrays/)
+
+nums1의 수를 해쉬셋에 담는다. nums2를 돌며 해쉬셋에 포함되어있으면 배열에 담는다.  
+어떻게 하면 시간 복잡도를 더 좋게 할 수 있을까?
+
+### 11. Kth-Smallest-Element-In-A-Sorted-Matrix (X)
+(https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
+
+못 푼 이유: 45분 초과. 도저히 공간 복잡도를 O(n^2) 보다 좋게 할 방법이 안 떠오르네.
+
