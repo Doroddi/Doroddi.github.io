@@ -94,4 +94,16 @@ nums1의 수를 해쉬셋에 담는다. nums2를 돌며 해쉬셋에 포함되�
 ### 14. Task-Schedular (X)
 (https://leetcode.com/problems/task-scheduler/)
 
-머릿속 알고리즘을 코드로 옮기질 몬하겠음.  
+머릿속 알고리즘을 코드로 옮기질 몬하겠음.
+
+### 15. Sort-Array-By-Parity (19:04) (O) [✓]
+(https://leetcode.com/problems/sort-array-by-parity/)
+
+투 포인터로 좌, 우에서 조건에 맞는 애들 발견하면 멈춰서 스왑. 시간 복잡도 O(n), 공간복잡도 O(1)
+
+### 16. Sort-Array-By-Parity-II (26:08) (O)
+(https://leetcode.com/problems/sort-array-by-parity-ii/)
+
+위문제와 동일하게 투 포인터를 사용해서 짝수 인덱스와 홀수 인덱스를 검사해 잘못 들어간 애들끼리 교환한다.  
+추가 배열을 만들지 않고 투포인터를 사용했기 때문에 Follow-up에서 제시한 공간 복잡도 O(1)은 만족하였음.  
+최악의 경우에 시간 복잡도가 O(n)인 것 같은데 시간 복잡도를 더 줄일 수 있는 방법이 있는건가?
