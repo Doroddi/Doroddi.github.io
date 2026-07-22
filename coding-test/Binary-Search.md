@@ -25,3 +25,32 @@ Upper Bound와 Lower Bound를 찾는 문제. 기본 개념은 Upper Bound는 tar
 
 레전드 뇌 녹음 이슈.  
 조건에 따르면 정렬된 1차원 배열이나 다름이 없기 때문에 1차원 배열이라고 생각하고 binary search를 하면 되는데, **순수하게 1차원 배열의 인덱스 값을 2차원 배열의 row, column 값으로 바꾸는걸 잘못 계산함.**
+
+### 5. [Easy] Count-Complete-Tree-Nodes (X)
+(https://leetcode.com/problems/count-complete-tree-nodes/)
+
+못 푼 이유: 시간 초과. 완전 이진 트리의 노드 개수 구하기. 어케 함?
+
+### 6. [Medium] Search-In-Rotated-Sorted-Array-II (13:35) (O/?)
+(https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+
+1. 정렬 후 binary search. 흠, 절대 이렇게 풀라고 준 문제는 아닌듯 싶죠?  
+
+2. 처음 앞 수보다 뒷 수가 작아질 때를 기점으로 회전 시킨 후 binary search 하는 방식으로 해결하니 O(n)으로 줄었지만, 여전히 요구하는 정답은 아닌듯 함.
+
+### 7. [Easy] First-Bad-Version (09:56) (O) [✓]
+(https://leetcode.com/problems/first-bad-version/)
+
+처음으로 불량이 나오는 버전을 찾는다. = 타겟보다 처음으로 큰 수를 찾는다. = Upper Bound + 1 찾기 = 타겟들 중 가장 작은 수를 찾는다. = Lower Bound 찾기. 모두 동일.
+
+### 8. [Easy] Missing-Number (04:52) (O) 
+(https://leetcode.com/problems/missing-number/)
+
+0~n 중 n개가 들어있으므로 들어있지 않은 하나의 수를 찾기 위해 temp array를 만들어 해쉬 방식으로 하면 O(n)으로 해결 가능.
+Follow-up이 요구한 공간 복잡도 O(1)을 만족하려면 오또케 해야할까? -> 배열 각 인덱스 값에 들어있는 수의 인덱스 칸을 찾아가서 스왑하는 방식으로 추가 메모리 없이 체크를 했는데, 메모리 효율이 떨어짐. 시간 효율은 떨어질 것 같은 느낌이였긴 했는데 메모리는 와이????
+
+### 9. [Easy] Kth-Missing-Positive-Number (13:20) (O)
+(https://leetcode.com/problems/kth-missing-positive-number/)
+
+해쉬셋에 주어진 배열에 담긴 수를 담고 1부터 넣어보면서 해쉬셋에 없으면 카운팅 있으면 노 카운팅. 시간 복잡도 O(n)으로 생각되는데(확신 x) 그래서 시간, 공간 점수가 둘 다 낮은 것일까?  
+느낌상은 binary search로 해결하여 O(logN)으로 해결할 수 있을 것 같은데? 
