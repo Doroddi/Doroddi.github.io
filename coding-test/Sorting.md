@@ -12,7 +12,7 @@
 이를 이용하여 Array.sort(stringNums, (a, b) -> (b + a).compareTo(a + b))로 한 번에 내림차순 정렬. 두 수를 비교하면 항상 길이도 같기 때문에 문제 생길 것 없음.
 문자열 형태로 접근하는 접근 방식을 떠올리지 못한 것이 못푼듯? 
 
-### 2. H-Index (X/O)
+### 2. H-Index (X/O) [✓]
 (https://school.programmers.co.kr/learn/courses/30/lessons/42747?language=java)
 
 못 푼 이유: 45분 초과, 문제 자체는 겁나 쉬운데 한 번 잘못된 방식으로 들어가니까 끝 없이 그 굴레에서 벗어나지 못했음. 화장실 한 번 갔다오니까 바로 풂.
@@ -43,14 +43,14 @@
 레전드 멍청한 풀이다. 일단 정렬을 했으면 과반인 값은 중앙에 반드시 존재하게 되므로 능지 이슈 발생.  
 +) 코드 분석 결과 Follow-up 기준까지 만족하려면 보이어-무어 알고리즘을 활용하여 후보자 값에서 다른 값을 만날 때마다 같이 제외시키면(모두 제외된 상태에서 후보자와 다른 숫자를 만나면 그 숫자가 다시 후보자가 된다.) 결국 과반인 수는 반드시 남게되므로 O(n)과 O(1)을 손쉽게 만족할 수 있더라.
 
-### 6. Contains-Duplicate (5:22) (O)
+### 6. Contains-Duplicate (5:22) (O) [✓]
 (https://leetcode.com/problems/contains-duplicate/)
 
 정렬 후 앞에서부터 하나씩 읽음. 같은 것 나오면 true 반환, 모두 다 다르면 false 반환.  
 시간 복잡도 점수가 낮아서 바로 떠오른 생각은 정렬 중간에 같은 값이면 바로 true 반환하는 방식도 고려해볼만 하지 않나 싶음.  
 +) 코드 분석 결과 시간 복잡도를 낮추기 위해선 HashSet을 사용하는 방법이 있지만 공간 복잡도 면에서 단점이 있음.
  
-### 7. Valid-Anagram (7:32) (O)
+### 7. Valid-Anagram (7:32) (O) [✓]
 (https://leetcode.com/problems/valid-anagram/)
 
 각 문자열을 char 배열로 변형 후 정렬한 뒤 앞에서부터 비교. 시간 복잡도는 낫배드, 공간 복잡도는 char 배열 생성으로 인해 낮아진듯?  
