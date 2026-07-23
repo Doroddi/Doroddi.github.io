@@ -43,14 +43,34 @@ Upper Bound와 Lower Bound를 찾는 문제. 기본 개념은 Upper Bound는 tar
 
 처음으로 불량이 나오는 버전을 찾는다. = 타겟보다 처음으로 큰 수를 찾는다. = Upper Bound + 1 찾기 = 타겟들 중 가장 작은 수를 찾는다. = Lower Bound 찾기. 모두 동일.
 
-### 8. [Easy] Missing-Number (04:52) (O) 
+### 8. [Easy] Missing-Number (04:52) (O/?) 
 (https://leetcode.com/problems/missing-number/)
 
-0~n 중 n개가 들어있으므로 들어있지 않은 하나의 수를 찾기 위해 temp array를 만들어 해쉬 방식으로 하면 O(n)으로 해결 가능.
-Follow-up이 요구한 공간 복잡도 O(1)을 만족하려면 오또케 해야할까? -> 배열 각 인덱스 값에 들어있는 수의 인덱스 칸을 찾아가서 스왑하는 방식으로 추가 메모리 없이 체크를 했는데, 메모리 효율이 떨어짐. 시간 효율은 떨어질 것 같은 느낌이였긴 했는데 메모리는 와이????
+0~n 중 n개가 들어있으므로 들어있지 않은 하나의 수를 찾기 위해 t 인emp array를 만들어 해쉬 방식으로 하면 O(n)으로 해결 가능.
+Follow-up이 요구한 공간 복잡도 O(1)을 만족하려면 오또케 해야할까? -> 배열 각덱스 값에 들어있는 수의 인덱스 칸을 찾아가서 스왑하는 방식으로 추가 메모리 없이 체크를 했는데, 메모리 효율이 떨어짐. 시간 효율은 떨어질 것 같은 느낌이였긴 했는데 메모리는 와이????
 
-### 9. [Easy] Kth-Missing-Positive-Number (13:20) (O)
+### 9. [Easy] Kth-Missing-Positive-Number (13:20) (O/?)
 (https://leetcode.com/problems/kth-missing-positive-number/)
 
 해쉬셋에 주어진 배열에 담긴 수를 담고 1부터 넣어보면서 해쉬셋에 없으면 카운팅 있으면 노 카운팅. 시간 복잡도 O(n)으로 생각되는데(확신 x) 그래서 시간, 공간 점수가 둘 다 낮은 것일까?  
 느낌상은 binary search로 해결하여 O(logN)으로 해결할 수 있을 것 같은데? 
+
+### 10. [Easy] Binary-Search (02:15) (O) [✓]
+(https://leetcode.com/problems/binary-search/)
+
+### 11. [Medium] Find-Peak-Element (X/O)
+(https://leetcode.com/problems/find-peak-element/)
+
+못 푼 이유: 시간 초과.
+접근은 배열을 두 구간으로 나눠 반반 씩 분할하여 peak element인지 검사한다는 생각으로 분할 정복 알고리즘으로 재귀 함수를 구현하였다. 배열 인덱스 부분을 해결하지 못하여 해결하지 못했음.  
+결국 인덱스 문제 해결했지만 큰 에러 포인트는 코드를 짤 때 이러한 인덱스 문제를 어떻게 깔끔하게 해결하면서 갈 지에 대한 고민을 해봐야 함. 기본 알고리즘을 짜도 인덱스 등의 세부 조건 등을 정답 제출 후 발견하여 코드에 계속해서 추가하는 방식으로 코드를 짜다 보니 알고리즘의 정확성과 가독성을 매우매우 저해함.
+
+### 12. [Easy] Intersection-Of-Two-Arrays (11:53) (O/?)
+(https://leetcode.com/problems/intersection-of-two-arrays/)
+
+binary search가 주제니까 각 배열 정렬 후 더 짧은 배열에 있는 각 원소를 더 긴 배열에서 binary search해서 존재하면 intersection 셋에 저장.  
+이전에 풀었을 때, 한 배열을 해쉬셋에 넣고 나머지 배열의 원소들을 해당 해쉬셋에 존재하는지 검사하는게 당연히 더 빠르다.(정렬 알고리즘 시간 복잡도 때문.)
+쨋든, 두 방식 모두 시간 복잡도가 떨어지는데 어떤 더 나은 방법이 있을까?
+
+### 13.
+####
