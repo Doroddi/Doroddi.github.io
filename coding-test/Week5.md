@@ -39,8 +39,8 @@ Follow-up의 One-pass 솔루션은 투 포인터를 가지고 잘 해보면 될�
 ### 8. [Easy] Linked List Cycle (06:07) (O/O) [✓]
 (https://leetcode.com/problems/linked-list-cycle/)
 
-그냥 노드 수 최대 10000개니까 10000번 돌때 동안 next가 null이 되지 않으면 true로 단순하게 해결하기. O(n)이고 O(1).
-+) 하나의 노드를 생성(체크용)해서 모든 노드의 next에 해당 노드를 추가함으로써 생성한 노드를 next를 가지고 있으면 circle이 형성된 것이고, null이 나오면 circle이 형성되지 않은 것.
+그냥 노드 수 최대 10000개니까 10000번 돌때 동안 next가 null이 되지 않으면 true로 단순하게 해결하기. O(n)이고 O(1).  
++) 하나의 노드를 생성(체크용)해서 모든 노드의 next에 해당 노드를 추가함으로써 생성한 노드를 next를 가지고 있으면 circle이 형성된 것이고, null이 나오면 circle이 형성되지 않은 것.  
 ++) 두 개의 포인터를 두고 이동속도를 다르게 하여 노드를 탐색했을 때, circle이 형성돼있다면 반드시 만날 수 밖에 없음.
 
 ### 9. [Easy] Palindrome Linked List (X/O/?)
