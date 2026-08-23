@@ -97,7 +97,7 @@ flag를 두어 상하와 좌우를 번갈아가면서 탐색할 수 있도록 �
 
 노드의 간선(A)에 연결된 노드(B)들을 각 clone 노드(B의 clone)를 만들어(hash table에 추가) clone 노드(A의 clone)의 간선에 연결, 해당 노드와 clone 노드를 대상으로 같은 동작을 재귀적으로 실행함. 이때 hash table에 추가된 노드라면 바로 반환. 시간 복잡도 O(v+e), 공간 복잡도 O(v).  
 
-### 13. [Medium] Redundant Connection (X)
+### 13. [Medium] Redundant Connection (X) [✓]
 (https://leetcode.com/problems/redundant-connection/)
 
 못 푼 이유: 알고리즘 못 떠올림.
