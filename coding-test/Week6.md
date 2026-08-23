@@ -100,6 +100,11 @@ flag를 두어 상하와 좌우를 번갈아가면서 탐색할 수 있도록 �
 ### 13. [Medium] Redundant Connection (X)
 (https://leetcode.com/problems/redundant-connection/)
 
+못 푼 이유: 알고리즘 못 떠올림.
 모든 노드를 각각의 집합으로 초기화하고, 추가되는 간선에 따라 각 노드들을 같은 집합으로 묶어줌. 이때 이미 같은 집합이었던 노드들의 간선이 추가된다면 사이클이 생김.  
 
-### 14. [Medium] 
+### 14. [Medium] Network Delay Time (X)
+(https://leetcode.com/problems/network-delay-time/)
+
+못 푼 이유: 알고리즘 X.
+위와 같이 집합으로 연관지어 해결해보려 했는데, 이런 방식이 아닌 것 같음.
