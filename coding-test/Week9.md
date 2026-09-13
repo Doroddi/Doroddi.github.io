@@ -34,7 +34,7 @@
 ### 7. [Medium] Letter Tile Possibilities (43:14) (O) [✓]
 (https://leetcode.com/problems/letter-tile-possibilities/)
 
-각 알파벳 자리의 유무를 체크해서 백트래킹을 실시하고 완성된 문자열을 hashset에 넣음. hashset에 없었다면 count를 올리고 아니면 재귀 실행 x.
+각 알파벳 자리의 유무를 체크해서 백트래킹을 실시하고 완성된 문자열을 hashset에 넣음. hashset에 없었다면 count를 올리고 아니면 재귀 실행 x.  
 +) 위는 사실 좋지 못한 풀이고, 이 문제의 핵심은 알파벳의 빈도 수로 구성할 수 있는 문자열을 나타내는 것. 빈도수 표에서 어떤 알파벳을 고르고 재귀로 넘기면 자연스럽게 남은 알파벳들로 문자열을 구성하게 됨. 이렇게 되면 중복을 자연스럽게 방지할 수 있음. 순서가 아닌 각 알파벳의 개수를 가지고 상태를 만들기 때문.
 
 ### 8. [Medium] Course Schedule (X)
