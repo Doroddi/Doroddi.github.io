@@ -78,4 +78,7 @@
 
 10번 문제에서 다뤘던 주제이기에 쉽게 해결.
 
-### 15. [
+### 15. [Medium] Course Schedule II (X)
+(https://leetcode.com/problems/course-schedule-ii/)
+
+못 푼 이유: 1과 같은 이유.
