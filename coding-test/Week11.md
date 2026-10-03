@@ -34,4 +34,14 @@
 생 노가다 문제.  
 +) 근데 정규 표현식을 사용하는 문제 같네.
 
-### 7. 
+### 7. 메뉴 리뉴얼 (X)
+(https://school.programmers.co.kr/learn/courses/30/lessons/72411)
+
+못 푼 이유: 시간 내 해결 실패  
+해쉬와 백트래킹을 적절히 사용하는 문제.
+
+### 8. 후보키 (X)
+(https://school.programmers.co.kr/learn/courses/30/lessons/42890)
+
+못 푼 이유: 알고리즘을 못 찾겠음.  
+
