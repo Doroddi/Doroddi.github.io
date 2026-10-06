@@ -44,4 +44,23 @@
 (https://school.programmers.co.kr/learn/courses/30/lessons/42890)
 
 못 푼 이유: 알고리즘을 못 찾겠음.  
+비트마스크와 해쉬셋을 이용해서 푸는데, 비트 마스크 아이디어는 여전히 생소한 부분인 것 같음. 그보다 더 문제는 딱 봤을 때 어떻게 접근해야할 지 안 떠오른다는 것임.
+
+### 9. 불량 사용자 (X)
+(https://school.programmers.co.kr/learn/courses/30/lessons/64064)
+
+못 푼 이유: 뭔가 흐름은 잡히는데 코드를 못 짜겠음.
+
+### 10. 방금그곡 (X)
+(https://school.programmers.co.kr/learn/courses/30/lessons/17683)
+
+정규화.
+
+### 11. 캐시 (O)
+(https://school.programmers.co.kr/learn/courses/30/lessons/17680)
+
+ArrayList 자료 구조를 캐시로 활용.
+
+### 12. [Medium] Cheapest Flights Within K Stops (
+(https://leetcode.com/problems/cheapest-flights-within-k-stops)
 
