@@ -61,6 +61,7 @@
 
 ArrayList 자료 구조를 캐시로 활용.
 
-### 12. [Medium] Cheapest Flights Within K Stops (
+### 12. [Medium] Cheapest Flights Within K Stops (X)
 (https://leetcode.com/problems/cheapest-flights-within-k-stops)
 
+PQ를 이용한 다익스트라 문제. 가중치 + 조건 하나가 더 붙음.
