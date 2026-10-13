@@ -43,3 +43,14 @@ DFS(재귀), BFS(큐 반복문).
 ### 9. [Medium] House Robber II (X)
 (https://leetcode.com/problems/house-robber-ii/)
 
+House Robber I과 같은 접근이지만 이번에는 원형이라는 조건이 붙음. 여기서 첫 집과 마지막 집을 동시에 선택할 수 없다는 점을 이용하면, 첫 집을 선택했을 때와 마지막 집을 선택했을 때 두 가지 경우에 대해 각각 일렬 구조를 만들 수 있고, 두 가지 경우, 각각으로 나누어 최댓값을 구하면 됌. 아이디어가 좋은 문제.
+
+### 10. Jump Game II (X/O)
+(https://leetcode.com/problems/jump-game-ii/)
+
+했던건데, DP인 것도 알겠고 그리디인 것도 알겠는데, 코드가 안 짜진다.  
+지금 칸에서 점프할 수 있는 곳 중, 다시 그 칸에서 가장 멀리 갈 수 있는 칸이 나오면 점프한다. 따라서 내가 현재까지 갈 수 있는 최대 범위 안에서 새로운 최대 범위를 갱신시키다가 현재 최대 범위에 이르면 최대 범위를 갱신하고 있던 값으로 바꿔준다.
+
+### 11. Longest Uploaded Prefix (
+(https://leetcode.com/problems/longest-uploaded-prefix/)
+
